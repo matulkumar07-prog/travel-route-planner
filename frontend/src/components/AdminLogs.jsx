@@ -8,6 +8,7 @@ const AdminLogs = ({ adminToken }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const [filterAlgo, setFilterAlgo] = useState('all');
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     fetchLogs(currentPage);
   }, [currentPage]);

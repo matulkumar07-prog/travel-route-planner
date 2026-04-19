@@ -12,6 +12,7 @@ const AdminSettings = ({ adminToken }) => {
   const [message, setMessage] = useState('');
   const [error, setError] = useState('');
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     fetchSettings();
   }, []);

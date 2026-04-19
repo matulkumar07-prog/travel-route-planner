@@ -13,6 +13,7 @@ const AdminDashboard = ({ admin, adminToken, onAdminLogout }) => {
   const [activeTab, setActiveTab] = useState('overview');
   const navigate = useNavigate();
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     fetchDashboardData();
   }, []);

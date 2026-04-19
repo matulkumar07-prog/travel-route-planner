@@ -9,6 +9,7 @@ const AdminUsers = ({ adminToken }) => {
   const [selectedUser, setSelectedUser] = useState(null);
   const [userDetails, setUserDetails] = useState(null);
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     fetchUsers(currentPage);
   }, [currentPage]);

@@ -8,6 +8,7 @@ const AdminRoutes = ({ adminToken }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const [deleteConfirm, setDeleteConfirm] = useState(null);
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     fetchRoutes(currentPage);
   }, [currentPage]);
